@@ -12,7 +12,6 @@ if(isset($_POST['username']) && isset($_POST['password'])){
 	$username = $_POST['username'];
 	$password = $_POST['password'];
 	//$conn = mysql_connect('server-address.or.IP-address', 'username', 'password', 'optionalDatabaseName');
-	$conn = mysqli_connect('localhost', 'microblog', '7RH15qeE9oh2RCFh', 'microblog');//7RH15qeE9oh2RCFh');
 
 
 	$result = mysqli_query($conn, "SELECT * FROM `users` WHERE `username`='$username' AND `password`='$password'");
